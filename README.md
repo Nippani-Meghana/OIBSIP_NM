@@ -45,7 +45,7 @@ internship-projects/
 │   ├── menu.csv
 │   ├── retail_sales_eda.py
 │   └── README.md
-└── README.md (this file)
+└── README.md
 ```
 
 ---
