@@ -40,7 +40,7 @@ A menu-driven Python application to perform exploratory data analysis on retail 
 
 ```
 internship-projects/
-├── retail_sales_eda/
+├── EDA/
 │   ├── retail_sales_dataset.csv
 │   ├── menu.csv
 │   ├── retail_sales_eda.py
