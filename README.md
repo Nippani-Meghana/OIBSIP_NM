@@ -25,6 +25,33 @@ A menu-driven Python application to perform exploratory data analysis on retail 
 
 **Status:** Completed
 
+
+### 2. Sentiment Analysis on Twitter Data
+
+**Description:**
+A Python-based application to perform sentiment analysis on Twitter data using Natural Language Processing (NLP) and machine learning algorithms. The tool processes tweet text, applies TF-IDF vectorization with additional engineered features, trains classification models, and presents results through multiple visualization options.
+
+**Key Features:**
+
+* Data cleaning pipeline to remove links, usernames, and special characters
+* Feature engineering including character count and word count
+* TF-IDF vectorization with extra features stacked into the model input
+* Sentiment classification into Positive, Neutral, and Negative
+* Model comparison between Naive Bayes and Linear SVM
+* Confusion matrix heatmaps for both models using Matplotlib
+* Comparative bar charts for prediction distributions
+* Interactive CLI menu for selecting visualization outputs
+
+**Technologies:**
+Python, Pandas, NumPy, SciPy, Matplotlib, scikit-learn
+
+**Objective:**
+To implement a complete sentiment analysis workflow from raw Twitter data to model training, evaluation, and visualization, while practicing feature engineering, model comparison, and result interpretation.
+
+**Status:**
+Completed
+
+
 ---
 
 ## How to Run Any Project
