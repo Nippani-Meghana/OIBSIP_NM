@@ -52,28 +52,6 @@ To implement a complete sentiment analysis workflow from raw Twitter data to mod
 Completed
 
 
----
-
-## How to Run Any Project
-
-* Clone or download the repository.
-* Ensure any dataset files are placed in the same directory as the corresponding `.py` or `.ipynb` file.
-* Run the script or notebook in your preferred Python environment (VS Code, Jupyter Notebook, or terminal).
-* Follow any command-line prompts if the project uses a menu system.
-
----
-
-## Folder Structure
-
-```
-internship-projects/
-├── EDA/
-│   ├── retail_sales_dataset.csv
-│   ├── menu.csv
-│   ├── retail_sales_eda.py
-│   └── README.md
-└── README.md
-```
 
 ---
 
