@@ -52,6 +52,34 @@ To implement a complete sentiment analysis workflow from raw Twitter data to mod
 Completed
 
 
+## 3. Analyzing Google Play Store Data
+
+**Description:**
+A Python-based application to analyze Google Play Store application data, focusing on category distribution, key metrics, and sentiment analysis from user reviews. The tool processes two datasets (`apps.csv` and `user_reviews.csv`), performs data cleaning, integrates related fields, and presents insights through multiple visualization options in an interactive CLI menu.
+
+**Key Features:**
+
+* Data cleaning pipeline to standardize numerical formats in `Price` and `Installs` and handle missing values.
+* Integration of app details and review sentiment data via dataset merging.
+* Category exploration to visualize the distribution of apps across various categories.
+* Metrics analysis including:
+
+  * Average rating per category
+  * Average installs per category
+  * Comparison of installs between free and paid apps
+* Sentiment analysis including:
+
+  * Distribution of review sentiment for free vs paid apps
+  * Sentiment polarity histograms by sentiment category
+* Interactive CLI menu for accessing dataset previews, category exploration, metrics analysis, and sentiment analysis visualizations.
+
+**Technologies:** Python, Pandas, NumPy, Matplotlib
+
+**Objective:**
+To implement a complete exploratory data analysis (EDA) workflow on Google Play Store datasets, integrating app metadata with sentiment data from user reviews to identify category trends, usage patterns, and sentiment distributions.
+
+**Status:** Completed
+
 
 ---
 
