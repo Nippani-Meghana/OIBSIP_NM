@@ -80,6 +80,36 @@ To implement a complete exploratory data analysis (EDA) workflow on Google Play 
 
 **Status:** Completed
 
+## 4. Data Cleaning Menu for Airbnb & YouTube Datasets
+
+Description: A menu‑driven Python application to demonstrate the five core data‑cleaning steps on the Airbnb NYC (2019) dataset and YouTube Trending datasets for Canada (CA), Great Britain (GB), and the United States (US). The tool audits data quality, applies policy‑based missing handling, standardizes formats, validates integrity via Boolean flags, and visualizes price outliers (Airbnb) using the IQR method.
+
+## Key Features
+
+* Interactive CLI with dataset‑specific submenus (Airbnb, CA, GB, US)
+* Audit module: missing counts (total and per column) and duplicate counts
+* Missing‑value handling policies:
+
+  * Airbnb: `number_of_reviews → 0`; conditional `reviews_per_month → 0.0` when `last_review` is missing; preserve `last_review` as NaT
+  * YouTube: fill missing `description` with "Unknown"
+* Standardization and integrity checks:
+
+  * Airbnb: parse `last_review` (ISO shadow column); flags for `availability_365` outside \[0, 365], non‑positive `price`, negative `number_of_reviews`, optional logical check (reviews present requires `last_review`)
+  * YouTube: flags for negative `views/likes/dislikes/comment_count`; cross‑field check that `likes + dislikes ≤ views` (implemented for CA)
+* Outlier visualization: histogram of Airbnb `price` with Q1, Q3, and the upper IQR fence (k = 1.5)
+* Non‑destructive workflow: values are not altered; issues are flagged (True/False)
+
+## Technologies
+
+Python, Pandas, NumPy, Matplotlib
+
+## Objective
+
+Practice real‑world data‑cleaning workflows aligned to the rubric (Data Integrity, Missing Data Handling, Duplicate Removal, Standardization, Outlier Detection), and present a reproducible, validation‑first approach suitable for internship review.
+
+## Status
+
+Completed
 
 ---
 
