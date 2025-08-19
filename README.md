@@ -99,17 +99,31 @@ Description: A menu‑driven Python application to demonstrate the five core dat
 * Outlier visualization: histogram of Airbnb `price` with Q1, Q3, and the upper IQR fence (k = 1.5)
 * Non‑destructive workflow: values are not altered; issues are flagged (True/False)
 
-## Technologies
+**Technologies:** Python, Pandas, NumPy, Matplotlib, scikit‑learn, pathlib/os
 
-Python, Pandas, NumPy, Matplotlib
+**Objective:** Practice real‑world data‑cleaning workflows aligned to the rubric (Data Integrity, Missing Data Handling, Duplicate Removal, Standardization, Outlier Detection), and present a reproducible, validation‑first approach suitable for internship review.
 
-## Objective
+**Status:** Completed
 
-Practice real‑world data‑cleaning workflows aligned to the rubric (Data Integrity, Missing Data Handling, Duplicate Removal, Standardization, Outlier Detection), and present a reproducible, validation‑first approach suitable for internship review.
+## 5. Predicting House Prices with Linear Regression
 
-## Status
+**Description:** A Python application that builds a linear regression model to estimate residential property prices from structural and amenity features. The workflow covers data loading, cleaning, categorical encoding (binary and one‑hot), model training/evaluation, and a parity plot to visualize agreement between predictions and actual prices. Dataset used: `Housing.csv` (545 rows × 13 columns) with columns: `price, area, bathrooms, bedrooms, stories, mainroad, guestrooms, basement, hotwaterheating, airconditioning, parking, prefarea, furnishingstatus`.
 
-Completed
+**Key Features:**
+
+* Robust file loading with fallback search using `pathlib` (works even if the working directory changes).
+* Clean preprocessing pipeline: missing-value drop, case/whitespace normalization, **Yes/No → 0/1** encoding for binary fields, and **one‑hot** encoding for `furnishingstatus` (baseline: unfurnished).
+* Clear feature set combining numeric and encoded categorical variables for modeling.
+* Reproducible **train/test split** and linear regression training.
+* **Model evaluation**: R² on train and test sets.
+* **Visualization**: Predicted vs. Actual (parity) scatter with a 45° reference line.
+* Extensible diagnostics suggested: residuals vs. predictions, residual distribution, and log‑price variant to address heteroscedasticity.
+
+**Technologies:** Python, Pandas, NumPy, Matplotlib, scikit‑learn, pathlib/os
+
+**Objective:** Practice an end‑to‑end applied ML workflow for tabular regression: prepare features correctly (including categorical encodings), train a baseline linear model, validate with appropriate metrics/plots, and communicate findings clearly for stakeholders.
+
+**Status:** Completed
 
 ---
 
