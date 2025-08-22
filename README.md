@@ -125,6 +125,46 @@ Description: A menu‑driven Python application to demonstrate the five core dat
 
 **Status:** Completed
 
+## 6. Wine Quality Prediction
+
+**Description:** A Python application that predicts wine quality from physicochemical features using three classical ML classifiers—Random Forest, Logistic Regression via `SGDClassifier` (with scaling), and a Linear SVM. The workflow covers robust file loading, quick EDA, a stratified train/test split, model training & accuracy evaluation, and a correlation heatmap for feature relationships.
+**Dataset used:** `WineQT.csv` with columns: `fixed acidity`, `volatile acidity`, `citric acid`, `residual sugar`, `chlorides`, `free sulfur dioxide`, `total sulfur dioxide`, `density`, `pH`, `sulphates`, `alcohol`, `quality`.
+
+---
+
+## Key Features
+
+* **Robust file loading** with fallback search using `pathlib`:
+
+  * Looks for `WineQT.csv` in the working directory; if missing, searches recursively for files like `WineQT*.csv`.
+* **Quick EDA helper** (`data_exploration`):
+
+  * Prints column names, dataset shape, and first few rows for a fast sanity check.
+* **Clean feature/target setup**:
+
+  * Features `X` select only numeric predictors; target `y` is `quality`.
+* **Reproducible, stratified split**:
+
+  * `train_test_split(..., stratify=y, random_state=0)` preserves label proportions.
+* **Three modeling baselines**:
+
+  * **RandomForestClassifier**: `n_estimators=300`, `class_weight='balanced'`, `oob_score=True`, `random_state=0`.
+  * **SGDClassifier (logistic)**: Uses **standardization** (`StandardScaler`) and early stopping for stability.
+  * **Linear SVM** (`svm.SVC(kernel='linear')`): Simple linear margin baseline.
+* **Evaluation**:
+
+  * Prints **class distribution** for train/test and **Accuracy** for each model on the test set.
+* **Visualization**:
+
+  * **Correlation heatmap** (Seaborn) over all numeric features.
+
+**Technologies:** Python, Pandas, NumPy, Matplotlib, scikit‑learn, pathlib/os, seaborn
+
+**Objective:** Practice an end‑to‑end applied **classification** workflow for tabular data: prepare features properly, ensure a fair split, compare multiple baseline models, validate with simple metrics/plots, and communicate decisions/next steps clearly.
+
+**Status:** Completed
+
+
 ---
 
 ## License
